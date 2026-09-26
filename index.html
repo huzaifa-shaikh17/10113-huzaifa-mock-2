@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-12">
+          <div class="mt-5 mb-3">
+            <h3 class="text-center">Budget Tracker Syatem</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card my-3" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">Add Budget</h5>
+                  <div class="my-3">
+                    <form action="" method="post" id="budget-form">
+                      <label class="fw-medium">Budget:</label>
+                      <input
+                        type="text"
+                        name="userBudget"
+                        id="userBudget"
+                        class="form-control input-text"
+                      />
+                    </form>
+                  </div>
+                  <a href="#" class="btn btn-primary">Add Budget</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="row gap-3">
+                <div class="border border-black rounded-2 col-md-3">
+                  <p>Total Budget:</p>
+                </div>
+                <div class="border border-black rounded-2 col-md-3">
+                  <p>Total Expense:</p>
+                </div>
+                <div class="border border-black rounded-2 col-md-3">
+                  <p>Budget Left:</p>
+                </div>
+              </div>
+
+              <div class="row my-4">
+                <div class="col-md-12">
+                  <div>
+                    <p class="fs-5">Expense History:</p>
+                  </div>
+                </div>
+                <div>
+                  <table
+                    class="table table-bordered table-striped table-hover"
+                    id="view-expenses"
+                  >
+                    <thead>
+                      <tr>
+                        <th>No.</th>
+                        <th>Expense Name</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card my-3" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">Add Expense</h5>
+                  <div class="my-3">
+                    <form action="" method="post" id="expenseForm">
+                      <div class="form-group">
+                        <label for="title">Title:</label>
+                        <input
+                          type="text"
+                          name="expenseTitle"
+                          id="expenseTitle"
+                          class="form-control input-text"
+                          required
+                        />
+                      </div>
+
+                      <div class="form-group my-2">
+                        <label for="description">Description</label>
+                        <input
+                          type="text"
+                          id="description"
+                          class="form-control input-text"
+                          required
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input
+                          type="number"
+                          id="amount"
+                          class="form-control input-text"
+                          required
+                        />
+                      </div>
+                      <a
+                        href="#"
+                        type="submit"
+                        id="submitBtn"
+                        class="btn btn-primary mt-2"
+                        >Add Expense</a
+                      >
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
